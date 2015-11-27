@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE hibernate-mapping PUBLIC
-    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.duan.model.Employee" table="EMPLOYEE">
-        <id name="id" type="java.lang.Integer">
-            <generator class="increment" />
-        </id>
+	<class name="com.duan.model.Employee" table="employee">
+		<meta attribute="class-description">
+			This class contains the employee detail.
+		</meta>
 
-        <property name="name" type="java.lang.String">
-            <column name="name" length="20" />
-        </property>
+		<id name="id" type="java.lang.Integer">
+			<generator class="increment" />
+		</id>
 
-        <property name="age" type="java.lang.Integer">
-            <column name="age" length="20" />
-        </property>
-    </class>
+		<property name="name" type="java.lang.String">
+			<column name="name" length="20" />
+		</property>
+
+		<property name="grade" type="java.lang.Integer">
+			<column name="grade" length="20" />
+		</property>
+
+		<property name="password" type="java.lang.String">
+			<column name="password" length="20" />
+		</property>
+
+	</class>
 </hibernate-mapping>

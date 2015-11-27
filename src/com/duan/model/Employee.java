@@ -7,7 +7,8 @@ package com.duan.model;
 public class Employee {
 	private int id;
 	private String name;
-	private int age;
+	private int grade;
+	private String password;
 
 	public int getId() {
 		return id;
@@ -25,11 +26,19 @@ public class Employee {
 		this.name = name;
 	}
 
-	public int getAge() {
-		return age;
+	public int getGrade() {
+		return grade;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }

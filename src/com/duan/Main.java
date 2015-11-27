@@ -18,14 +18,8 @@ public class Main {
 		IChangeLetter upperCase = (IChangeLetter) context.getBean("upperCase");
 		System.out.println("---> result: " + upperCase.changeLetter());
 
-		Employee employee = new Employee();
-		employee.setId(1);
-		employee.setAge(20);
-		employee.setName("Tim");
-		SessionFactory sessionFactory = (SessionFactory) context.getBean("sessionFactory");
-		Session session = sessionFactory.openSession();
-		Transaction transaction = session.beginTransaction();
-		session.save(employee);
-		transaction.commit();
+
+
+
 	}
 }
